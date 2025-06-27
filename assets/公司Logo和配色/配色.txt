@@ -1,0 +1,7 @@
+Warm Neutrals: Off‑white, soft cream (#FDF9F3) — primary background
+
+Warm Accent: Coral / soft pink (#FF9793) — CTA/buttons
+
+Trust Colors: Teal / Sage (#69A297) — links & icons
+
+Text: Dark charcoal (#333333) for readability

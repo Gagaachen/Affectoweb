@@ -1,0 +1,446 @@
+:root {
+    --primary-bg: #FDF9F3;
+    --accent-color: #FF9793;
+    --link-color: #69A297;
+    --text-color: #333333;
+    --headline-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--primary-bg);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headline-font);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--primary-bg);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-weight: 600;
+    font-family: var(--headline-font);
+}
+
+#home-video {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.video-overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-overlay h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    padding: 0 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+main {
+    padding-top: 80px; /* Adjust for fixed header height */
+}
+
+section {
+    padding: 4rem 5%;
+    text-align: center;
+}
+
+#hero {
+    background-color: #ffffff; /* Use a white background for a clean, card-like effect */
+    padding: 5rem;
+    margin: 4rem 5%; /* Add margin for spacing and to constrain width */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07); /* Add a subtle shadow */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    text-align: left;
+    max-width: 1100px; /* Constrain content width */
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1; /* Adjust flex ratio to give image more space */
+}
+
+.hero-image {
+    flex: 1.1; /* Give image slightly more space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#highlights {
+    background-color: #ffffff; /* A slightly different shade to distinguish from the main bg */
+}
+
+#highlights h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.highlights-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.highlight {
+    max-width: 400px;
+}
+
+.highlight img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.highlight h3 {
+    font-size: 1.5rem;
+    color: var(--link-color);
+}
+
+#cta {
+    background-color: var(--primary-bg);
+    padding: 6rem 5%;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--headline-font);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #E58B88; /* A slightly darker shade of accent for hover */
+}
+
+/* Product Page Styles */
+.page-header {
+    background-color: var(--link-color);
+    color: white;
+    padding: 4rem 5%;
+    text-align: center;
+    margin: 0;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+}
+
+.feature {
+    background-color: white;
+    margin: 2rem 5% 4rem; /* Add vertical and horizontal margins for spacing */
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-image {
+    flex: 1.2; /* Give image slightly more space to make it appear larger */
+}
+
+.feature-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-text h2 {
+    font-size: 2.2rem;
+    color: var(--link-color);
+}
+
+.feature.alt-layout .feature-content {
+    flex-direction: row-reverse;
+}
+
+.feature-1 { background-image: url('../assets/Product/Feature 1/img_3.jpg'); }
+.feature-2 { background-image: url('../assets/Product/Feature 2/img_4.jpg'); }
+.feature-3 { background-image: url('../assets/Product/Feature 3/img_5.jpg'); }
+.feature-4 { background-image: url('../assets/Product/Feature 4/img_6.jpg'); }
+
+.feature-1 .feature-text,
+.feature-3 .feature-text {
+    margin-left: auto; /* Align text to the right */
+}
+
+.feature-2 .feature-text,
+.feature-4 .feature-text {
+    margin-right: auto; /* Align text to the left */
+}
+
+#prototype-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: var(--primary-bg);
+}
+
+#prototype-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.prototype-image-container img {
+    max-width: 70%; /* Increase image size slightly */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.prototype-caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #777;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* About Us Page Styles */
+#mission {
+    padding: 5rem 5%;
+    background-color: white;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.mission-text {
+    width: 60%;
+    text-align: left;
+}
+
+.mission-text h2 {
+    font-size: 2.2rem;
+    color: var(--link-color);
+    margin-bottom: 1rem;
+}
+
+.mission-image {
+    width: 40%;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#why-us {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+#why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.why-us-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.reason h3 {
+    font-size: 1.5rem;
+    color: var(--link-color);
+    margin-bottom: 1rem;
+}
+
+.about-image-banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Page Styles */
+#contact-info {
+    padding: 5rem 5%;
+    background: #fff;
+}
+
+.contact-container {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.contact-details {
+    width: 45%;
+    text-align: left;
+}
+
+.contact-details h2 {
+    font-size: 2.2rem;
+    color: var(--link-color);
+    margin-bottom: 1rem;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--body-font);
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--text-color);
+    color: var(--primary-bg);
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none; /* Hidden by default */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 100;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.back-to-top-btn:hover {
+    background-color: #E58B88;
+    color: white;
+}

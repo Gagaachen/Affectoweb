@@ -1,0 +1,6 @@
+Font Suggestions
+Headlines: Poppins or Lato — Modern, rounded, approachable
+
+Body Text: Open Sans or Roboto — Clean, readable
+
+Style: Maintain a clean layout, with plenty of whitespace to balance warm colors and images.

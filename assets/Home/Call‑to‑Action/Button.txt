@@ -1,0 +1,1 @@
+Button: “Learn More” → Goes to Product page
